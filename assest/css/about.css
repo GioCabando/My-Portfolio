@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+ 
+}
+body{
+    background: #222831 ;
+    color: #FFECDB;
+}
+
+.side-logo{
+    position: relative;
+    display: flex;
+    height: 50px;
+    margin-left: 300px;
+    bottom:1px ;
+}
+
+.side-logo2{   
+    position: relative;
+    display: flex;
+    height: 50px;
+    margin-right: 300px;
+   bottom: 1px;
+}
+
+
+.navbar{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    background: #393E46;
+    overflow:visible;
+    width: 100%;
+    padding: 0 10px;
+    height: 50px;
+}
+
+.menu{
+    right: 0;
+    
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 1.2rem;
+}
+
+.navbar ul li a{
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 0.2rem;
+    background: #00ADB5;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 100px 10%;
+  flex-wrap: wrap;
+}
+
+/* Profile Image */
+.hero-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #00adb5;
+  box-shadow: 0 0 30px #00adb5;
+  transition: transform 0.3s ease;
+}
+
+.hero-img img:hover {
+  transform: scale(1.05);
+}
+
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.hero-content span{
+  color:rgb(40, 162, 233);
+}
+
+.highlight {
+  color: #00adb5;
+  font-weight: 600;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  color: #00adb5;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #00adb5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #019ca3;
+}
+
+.button-contact {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.left-contact,
+.right-contact {
+   font-size: 5.5rem;
+    height: 8rem;
+    width: 8rem;
+    color: #FFFA8D;
+}
+

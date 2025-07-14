@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+ 
+}
+
+
+
+body{
+    background: #222831 ;
+    color: #FFECDB;
+}
+
+.side-logo{
+    position: relative;
+    display: flex;
+    height: 50px;
+    margin-left: 300px;
+    bottom:1px ;
+}
+
+.side-logo2{   
+    position: relative;
+    display: flex;
+    height: 50px;
+    margin-right: 300px;
+   bottom: 1px;
+}
+
+
+.navbar{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    background: #393E46;
+    overflow:visible;
+    width: 100%;
+    padding: 0 10px;
+    height: 50px;
+}
+
+.menu{
+    right: 0;
+    
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 1.2rem;
+}
+
+.navbar ul li a{
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 0.2rem;
+    background: #00ADB5;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+.background{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+}
+
+.button span{
+ font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.button {
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  transform: scale(1,1);
+  z-index: 2;
+  opacity: 90%;
+
+font-size: 80px;
+color: #71C9CE;
+  min-width: 80px;
+  border-radius: 21px;
+  border: 4px solid #E3FDFD;
+  border-bottom: 12px solid #CBF1F5;
+  margin: 20px;
+  transition: all 0.1s;
+  display: inline-flex;
+  padding: 24px 32px;
+  background-color: #E3FDFD;
+  box-shadow: 0 5px 0 #CBF1F5;
+}
+
+.button:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.middle p 
